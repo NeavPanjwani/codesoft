@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Digital Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      padding: 10px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      color: #ef476f;
+    }
+
+    .logo i {
+      margin-right: 8px;
+      color: #ffd166;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+    }
+
+    .cta-header {
+      background: #ef476f;
+      padding: 8px 16px;
+      color: white;
+      border-radius: 30px;
+      font-size: 14px;
+      margin-left: 16px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s;
+    }
+
+    .cta-header:hover {
+      background: #d43c60;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                  url('meet.jpg') center/cover no-repeat;
+      height: 550px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 18px;
+      letter-spacing: 4px;
+      margin: 10px 0;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+
+    .hero p {
+      font-size: 16px;
+      max-width: 600px;
+    }
+
+    .hero-buttons button {
+      background: #ef476f;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      margin: 10px;
+      font-size: 14px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .hero-buttons button:hover {
+      background: #d43c60;
+      transform: scale(1.05);
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+      padding: 40px 20px;
+    }
+
+    .feature {
+      margin: 0 30px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .feature i {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      padding: 60px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      max-width: 500px;
+      margin-right: 40px;
+    }
+
+    .about-text h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .about-img img {
+      max-width: 300px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-img img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .services {
+      text-align: center;
+      padding: 50px 20px;
+      background: #f7f7f7;
+    }
+
+    .services h2 {
+      margin-bottom: 40px;
+    }
+
+    .service-boxes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .service {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .service img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .service img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><i class="fas fa-bolt"></i> LANDING PAGE</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Blog</a>
+      <a href="#">Page</a>
+      <a href="#">Services</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Contact</a>
+      <a class="cta-header" href="#">Buy Now</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>WE ARE CREATIVE</h2>
+    <h1>CREATIVE DIGITAL AGENCY</h1>
+    <p>Lorem ipsum has been the industry standard dummy text ever since the 1500s...</p>
+    <div class="hero-buttons">
+      <button>READ MORE</button>
+      <button>REQUEST A CONSULT</button>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <i class="fas fa-rocket"></i>
+      <h4>LAUNCH BUSINESS</h4>
+    </div>
+    <div class="feature">
+      <i class="fas fa-headset"></i>
+      <h4>ONLINE SUPPORT TEAM</h4>
+    </div>
+    <div class="feature">
+      <i class="fas fa-clock"></i>
+      <h4>TIME MANAGEMENT</h4>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <h2>15 years, we passionate about achieving better results for our clients</h2>
+      <p>Lorem ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+      <button class="cta-header">READ MORE</button>
+    </div>
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61" alt="Thinking Man">
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>OUR SERVICES</h2>
+    <div class="service-boxes">
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="User Experience">
+        <h4>User Experience</h4>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="Creative Design">
+        <h4>Creative Design</h4>
+      </div>
+      <div class="service">
+        <img src="card.jpg" alt="Retina Ready">
+        <h4>Retina Ready</h4>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

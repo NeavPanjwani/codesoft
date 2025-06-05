@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neav Panjwani | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header d-flex" id="header">
+        <!-- <img class="profile-img" src="images/neav.jpg" alt="Profile Photo"> -->
+
+        <div class="header-text">
+            <div class="name-social">
+                <h1>Neav Panjwani</h1>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/neav-panjwani" target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.25h-3v-5.5c0-1.327-1.676-1.227-1.676 0v5.5h-3v-10h3v1.5c1.396-2.586 5-2.777 5 2.476v6.024z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/neavpanjwani" target="_blank" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.387.6.111.82-.261.82-.58 0-.287-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.729.082-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.775.42-1.304.763-1.604-2.665-.305-5.466-1.334-5.466-5.933 0-1.31.467-2.38 1.236-3.22-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.984-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.625-5.476 5.922.43.37.823 1.103.823 2.222 0 1.604-.015 2.896-.015 3.286 0 .321.216.694.825.576 4.765-1.59 8.2-6.087 8.2-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <p>B.Sc. IT Student | Aspiring Website Developer</p>
+        </div>
+    </header>
+
+
+    <section class="about" id="about">
+
+        <div class="about-card">
+            <img src="images/neav.jpg" alt="Neav Panjwani Photo" class="about-img" />
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I’m Neav Panjwani, a B.Sc. IT student from Mumbai with a GPA of 9.45, currently pursuing my degree at
+                    Vivekanand Education Society’s College. With a solid grounding in both frontend and backend
+                    development,
+                    I am passionate about building scalable, user-friendly digital experiences. My technical toolkit
+                    includes HTML, CSS, JavaScript, C/C++, PHP, Python, and SQL — and I’ve applied these skills through
+                    hands-on projects like an E-commerce website and a Food Ordering App UI/UX design.<br><br>
+
+                    I'm also well-versed in tools like Figma and Canva, allowing me to blend functionality with design.
+                    My
+                    approach is driven by continuous learning, adaptability, and a genuine love for technology and
+                    teamwork.<br><br>
+
+                    I'm always excited to collaborate on innovative projects that challenge me and contribute
+                    meaningfully
+                    to a growing tech ecosystem.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-group">
+            <h3>Technical Skills</h3>
+            <ul class="skills-list technical">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript (Basic)</li>
+                <li>C, C++, PHP</li>
+                <li>Python (NumPy, Pandas, Tkinter)</li>
+                <li>SQL</li>
+                <li>Figma, Canva</li>
+            </ul>
+        </div>
+
+        <div class="skills-group">
+            <h3>Soft Skills</h3>
+            <ul class="skills-list soft">
+                <li>Team collaboration</li>
+                <li>Problem-solving</li>
+                <li>Adaptability</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project card">
+                <img src="./images/e-commerce.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>E-commerce Website</h3>
+                    <p>Built with HTML, CSS, JavaScript. Designed a responsive platform with product listing, search,
+                        and
+                        cart features.</p>
+                </div>
+            </div>
+            <div class="project card">
+                <img src="./images/figma.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Restaurant Food Ordering App (UI/UX Design)</h3>
+                    <p>Created using Figma. Designed intuitive interface, menu categories, and real-time order status
+                        updates.</p>
+                </div>
+            </div>
+            <div class="project card">
+                <img src="./images/food.jpg" alt="Project 3">
+                <div class="project-info">
+                    <h3>Food Website</h3>
+                    <p>Developed using HTML, CSS, JavaScript. Implemented menu browsing and basic cart functionality
+                        with
+                        responsive UI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-resume-wrapper">
+        <!-- Contact Section - Left -->
+        <section class="contact" id="contact">
+            <div class="contact-card">
+                <h2>Contact Me</h2>
+
+                <p class="contact-item email">
+                    <svg class="icon contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 8l8 5 8-5V6l-8 5-8-5v2z" />
+                    </svg>
+                    <a href="mailto:panjwani.neav.satramdas@gmail.com">panjwani.neav.satramdas@gmail.com</a>
+                </p>
+
+                <p class="contact-item phone">
+                    <svg class="icon contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M6.62 10.79a15.054 15.054 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.48 2.53.75 3.88.75a1 1 0 011 1v3.5a1 1 0 01-1 1c-9.39 0-17-7.61-17-17a1 1 0 011-1H7a1 1 0 011 1c0 1.35.27 2.67.75 3.88a1 1 0 01-.21 1.11l-2.2 2.2z" />
+                    </svg>
+                    +91 98221 11204
+                </p>
+
+                <p class="contact-item linkedin">
+                    <svg class="icon contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.25h-3v-5.5c0-1.327-1.676-1.227-1.676 0v5.5h-3v-10h3v1.5c1.396-2.586 5-2.777 5 2.476v6.024z" />
+                    </svg>
+                    <a href="https://linkedin.com/in/neav-panjwani" target="_blank">LinkedIn Profile</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Resume Section - Right -->
+        <section class="resume" id="resume">
+            <h2>Resume</h2>
+            <a href="#" class="resume-link" aria-label="📄 Download My Resume"></a>
+
+        </section>
+
+    </section>
+
+
+
+    <footer>
+        &copy; 2025 Neav Panjwani. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
